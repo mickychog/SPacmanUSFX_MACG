@@ -1,20 +1,20 @@
 #pragma once
+#include <SDL.h>
 class Pacman
 {
 private:
-	float posicionX;
-	float posicionY;
+	SDL_Point posicion;
 	int color;
 	float velociadX;
 	float velocidadY;
 public:
-	void move(float _velocidadX, float _velocidadY);
+
 	void move(float _velocidadX, float _velocidadY) {};
 
-	float getPosicionX() { return posicionX; }
-	void setPosicionX(float _posicionX) { posicionX = _posicionX; }
-	float getPosicionY() { return posicionY; }
-	void setPosicionY(float _posicionY) { posicionY = _posicionY; }
+	SDL_Point getPosicion() { return posicion; }
+	void setPosicion(SDL_Point _posicion) { posicion = _posicion; }
+	
+	
 
 	float getVelocidadX() { return velocidadX; }
 	void setVelocidadX(float _velocidadX) { velocidadX = _velocidadX; }
